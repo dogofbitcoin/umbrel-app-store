@@ -40,10 +40,11 @@ dependencies: []
 repo: https://github.com/bitcoindogmode/bitcoin
 support: https://github.com/bitcoindogmode/bitcoin/issues
 port: 2117
+icon: https://raw.githubusercontent.com/dogofbitcoin/umbrel-app-store/main/dogofbitcoin-dogmode/icon.svg
 gallery:
-  - 1.jpg
-  - 2.jpg
-  - 3.jpg
+  - https://raw.githubusercontent.com/dogofbitcoin/umbrel-app-store/main/dogofbitcoin-dogmode/gallery/1.jpg
+  - https://raw.githubusercontent.com/dogofbitcoin/umbrel-app-store/main/dogofbitcoin-dogmode/gallery/2.jpg
+  - https://raw.githubusercontent.com/dogofbitcoin/umbrel-app-store/main/dogofbitcoin-dogmode/gallery/3.jpg
 path: ""
 defaultPassword: ""
 widgets:
