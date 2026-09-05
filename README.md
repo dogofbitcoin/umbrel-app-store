@@ -11,4 +11,4 @@ Apps here:
   source at a pinned commit by the Dog of Bitcoin Foundation (github.com/dogofbitcoin/docker-dogmode); the
   DOG Mode project has not cut a release yet, and this package is not an official release of theirs.
 
-Maintained by the Dog of Bitcoin Foundation, dev@dogswap.io.
+Maintained by the Dog of Bitcoin Foundation, contact@dogofbitcoin.org.
