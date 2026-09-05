@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
   
   app:
-    image: ghcr.io/dogofbitcoin/umbrel-dogmode:1.0.0 # PIN THE DIGEST after the first build (ghcr.io/dogofbitcoin/umbrel-dogmode:1.0.0@sha256:...)
+    image: ghcr.io/dogofbitcoin/umbrel-dogmode:v1.0.0@sha256:67d3be56411db4a758a6e43f9860b2042e8b6ab7679a1d14dfc1dd4eea6ba7c4
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 15m30s
