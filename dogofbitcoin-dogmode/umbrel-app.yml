@@ -1,0 +1,88 @@
+manifestVersion: 1.1
+id: dogofbitcoin-dogmode
+implements:
+  - bitcoin
+category: bitcoin
+name: DOG Mode
+version: "1.0.0"
+tagline: Run a DOG Mode node, the Bitcoin Core fork that relays what policy nodes drop
+description: >-
+  DOG Mode is a fork of Bitcoin Core 31.1 by the DOG Mode project that changes relay policy and nothing else:
+  standard transactions up to 3,900,000 weight units, a global dust limit of 1 satoshi, and preferential
+  peering with other DOG Mode nodes on service bit 14. Consensus is Bitcoin's. Relay policy is a choice.
+
+
+  This app is the same Bitcoin Node experience you know on umbrelOS (the same web interface, settings,
+  connection details and widgets) with the DOG Mode client in place of Bitcoin Core. It can run beside the
+  Bitcoin Node and Bitcoin Knots apps on its own ports, and apps that need a Bitcoin node (Electrs,
+  mempool, Lightning) can use it.
+
+
+  Who built the binary, plainly: the DOG Mode project has not published a release yet, so the client in this
+  app is compiled from source by the Dog of Bitcoin Foundation at the pinned commit 7503240091 of
+  github.com/bitcoindogmode/bitcoin, with the Dockerfile and the SHA256 sums public at
+  github.com/dogofbitcoin/docker-dogmode. When the project publishes a signed release, the app switches to
+  it. This package is maintained by the Dog of Bitcoin Foundation and is not an official release of the
+  DOG Mode project.
+
+
+  To accept incoming peers (and be counted by the DOG Mode seed at seed.dogofbitcoin.com), forward TCP
+  port 8433 on your router to your umbrelOS device.
+
+
+  Moving an already synced chain from the Bitcoin Node app: https://docs.mempool.guide/page/migrationumbrel.html
+  (the same steps as for Bitcoin Knots, with this app's data directory).
+releaseNotes: >-
+  First release: DOG Mode at commit 7503240091 (Bitcoin Core 31.1 plus the DOG Mode relay policy).
+developer: Dog of Bitcoin Foundation
+website: https://seed.dogofbitcoin.com
+dependencies: []
+repo: https://github.com/bitcoindogmode/bitcoin
+support: https://github.com/bitcoindogmode/bitcoin/issues
+port: 2117
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultPassword: ""
+widgets:
+  - id: "stats"
+    type: "four-stats"
+    refresh: "5s"
+    endpoint: "app:3000/api/widget/stats"
+    link: ""
+    example:
+      type: "four-stats"
+      link: ""
+      items:
+        - title: "Connections"
+          text: "11"
+          subtext: "peers"
+        - title: "Mempool"
+          text: "257"
+          subtext: "MB"
+        - title: "Hashrate"
+          text: "4.6"
+          subtext: "EH/s"
+        - title: "Blockchain size"
+          text: "601"
+          subtext: "GB"
+  - id: "sync"
+    type: "text-with-progress"
+    refresh: "5s"
+    endpoint: "app:3000/api/widget/sync"
+    link: ""
+    example:
+      type: "text-with-progress"
+      link: ""
+      title: "Blockchain sync"
+      text: "86.9%"
+      progressLabel: "Synced"
+      progress: 0.869
+backupIgnore:
+  - data/bitcoin/blocks
+  - data/bitcoin/chainstate
+  - data/bitcoin/indexes
+submitter: Dog of Bitcoin Foundation
+submission: https://github.com/dogofbitcoin/umbrel-app-store
