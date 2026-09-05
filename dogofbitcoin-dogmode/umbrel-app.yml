@@ -4,7 +4,7 @@ implements:
   - bitcoin
 category: bitcoin
 name: DOG Mode
-version: "1.0.0"
+version: "1.0.2"
 tagline: Run a DOG Mode node, the Bitcoin Core fork that relays what policy nodes drop
 description: >-
   DOG Mode is a fork of Bitcoin Core 31.1 by the DOG Mode project that changes relay policy and nothing else:
@@ -33,7 +33,9 @@ description: >-
   Moving an already synced chain from the Bitcoin Node app: https://docs.mempool.guide/page/migrationumbrel.html
   (the same steps as for Bitcoin Knots, with this app's data directory).
 releaseNotes: >-
-  First release: DOG Mode at commit 7503240091 (Bitcoin Core 31.1 plus the DOG Mode relay policy).
+  1.0.2: the app names itself DOG Mode in its header, with the project's icon, and the version tab says
+  DOG Mode where it said Bitcoin Core. The client is unchanged: DOG Mode at commit 7503240091 (Bitcoin
+  Core 31.1 plus the DOG Mode relay policy).
 developer: Dog of Bitcoin Foundation
 website: https://seed.dogofbitcoin.com
 dependencies: []
