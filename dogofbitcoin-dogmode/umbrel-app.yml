@@ -26,7 +26,7 @@ description: >-
   DOG Mode project.
 
 
-  To accept incoming peers (and be counted by the DOG Mode seed at seed.dogofbitcoin.com), forward TCP
+  To accept incoming peers (and be counted by the DOG Mode seed at seed.dogofbitcoin.org), forward TCP
   port 8433 on your router to your umbrelOS device.
 
 
@@ -38,7 +38,7 @@ releaseNotes: >-
   the libraries built into it, and Umbrel's license for the app interface. Nothing else changes. Updating
   restarts the node.
 developer: Dog of Bitcoin Foundation
-website: https://seed.dogofbitcoin.com
+website: https://seed.dogofbitcoin.org
 dependencies: []
 repo: https://github.com/bitcoindogmode/bitcoin
 support: https://github.com/bitcoindogmode/bitcoin/issues
