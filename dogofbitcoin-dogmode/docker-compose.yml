@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
   
   app:
-    image: ghcr.io/dogofbitcoin/umbrel-dogmode:v1.0.2@sha256:5044d9e38215a2e49b3902f6283f50225f95c9a101c918c960295aff897c55ec
+    image: ghcr.io/dogofbitcoin/umbrel-dogmode:v1.0.3@sha256:588350c1ee0ef4b640fe067dec6222a78c9c7e40794af33549ed39eb810085df
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 15m30s
